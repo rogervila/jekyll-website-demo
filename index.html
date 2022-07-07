@@ -1,0 +1,26 @@
+---
+layout: page
+---
+
+<div class="ray-grid">
+    {% for post in site.posts %}
+    <div class="ray-grid__cell">
+        <a href="{{ post.url }}" class="ray-card ray-card--link">
+            <!-- <div class="ray-card__image ray-image ray-image--16by9">
+                <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }}" />
+            </div> -->
+
+            <div class="ray-card__content">
+                <div class="ray-card__heading">{{ post.title }}</div>
+                <div>{{ post.excerpt }}</div>
+            </div>
+
+            <div class="ray-card__content">
+                {% for tag in post.tags %}
+                <span class="ray-tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

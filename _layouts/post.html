@@ -1,0 +1,35 @@
+---
+layout: layout
+---
+<div class="ray-page-container">
+
+    <ul class="ray-breadcrumbs">
+        <li class="ray-breadcrumb">
+            <a href="{{ '/' | relative_url }}">Home</a>
+        </li>
+        <li class="ray-breadcrumb">{{ page.title }}</li>
+    </ul>
+
+    <h1 class="ray-text--display-1">{{ page.title }}</h1>
+
+    <div class="ray-grid" style="padding-bottom: 1em">
+        <div class="ray-grid__cell--span-6">
+            {% for tag in page.tags %}
+            <span class="ray-tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        <div class="ray-grid__cell--span-6" style="display: flex; align-items: center; justify-content: flex-end;">
+            {% assign author = site.authors | where: 'identifier', page.author | first %}
+            <p style="margin-right: 1em;">{{ author.name }}</p>
+            <img height="32" loading="lazy" src="{{ author.image }}" alt="{{ author.name }}">
+        </div>
+    </div>
+
+    <!-- <div style="margin-bottom: 1em;" class="ray-image ray-image--16by9">
+        <img loading="lazy" src="{{ page.image }}" alt="{{ page.title }}" />
+    </div> -->
+
+    <hr style="border: none; border-bottom: .0625rem solid #e3e3e3">
+
+    <div class="ray-running-text">{{ page.content }}</div>
+</div>

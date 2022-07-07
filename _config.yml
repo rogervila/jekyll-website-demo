@@ -1,0 +1,24 @@
+---
+encoding: utf-8
+repository: rogervila/jekyll-website-demo
+plugins:
+  - github-pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+collections:
+  authors:
+    output: false
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

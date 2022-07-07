@@ -1,0 +1,51 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/@wework/ray-core@latest/css/ray-core.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="ray-page-container">
+        <div class="ray-grid" style="padding: 1em 0">
+            <div class="ray-grid__cell--span-8">
+                <h1 style="margin:0" class="ray-text--h1">
+                    <a href="{{ '/' | relative_url }}">Website demo</a>
+                </h1>
+            </div>
+            <div class="ray-grid__cell--span-4">
+                <div class="ray-form-item" style="margin:0">
+                    <div class="ray-text-field ray-text-field--with-icon-start">
+                        <svg class="ray-text-field__icon--start" width="19px" height="19px" viewBox="0 0 19 19"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Desktop-HD" transform="translate(-533.000000, -235.000000)" stroke="#b3b3b3"
+                                    stroke-width="2">
+                                    <circle id="Oval-125" cx="540" cy="242" r="6"></circle>
+                                    <path d="M544.5,246.5 L550.02268,252.02268" id="Line" stroke-linecap="square">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <input type="text" class="ray-text-field__input" id="input-with-icon"
+                            placeholder="Example product..." />
+                        <label class="ray-text-field__label" for="input-with-icon">
+                            Search
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: none; border-bottom: .0625rem solid #e3e3e3">
+    <!-- End Navbar -->
+
+    {{ content }}
+</body>
+
+</html>

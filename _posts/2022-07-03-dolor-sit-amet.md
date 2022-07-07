@@ -1,8 +1,11 @@
 ---
-author: "jane-doe"
-tags: ["release", "other-product"]
-image: https://picsum.photos/id/1015/800/450
 title: Dolor sit amet
+date: 2022-07-03 00:00:00 Z
+tags:
+- release
+- other-product
+author: jane-doe
+image: https://picsum.photos/id/1015/800/450
 ---
 
 Dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.

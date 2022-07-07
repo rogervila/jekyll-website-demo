@@ -1,8 +1,11 @@
 ---
-author: "jane-doe"
-tags: ["release", "example-product"]
-image: https://picsum.photos/id/1011/800/450
 title: Lorem ipsum dolor sit amet
+date: 2022-07-06 00:00:00 Z
+tags:
+- release
+- example-product
+author: jane-doe
+image: https://picsum.photos/id/1011/800/450
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.

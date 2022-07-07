@@ -1,8 +1,10 @@
 ---
-author: "john-doe"
-tags: ["release"]
-image: https://picsum.photos/id/1025/800/450
 title: Sed ut perspiciatis
+date: 2022-07-07 00:00:00 Z
+tags:
+- release
+author: john-doe
+image: https://picsum.photos/id/1025/800/450
 ---
 
 Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.

@@ -1,24 +1,31 @@
 ---
+title: Jekyll Website Demo
+timezone: UTC
+collections:
+  authors:
+    title: Authors
+    output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
 encoding: utf-8
 repository: rogervila/jekyll-website-demo
 plugins:
-  - github-pages
+- github-pages
 exclude:
-  - Gemfile
-  - Gemfile.lock
-collections:
-  authors:
-    output: false
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+- Gemfile
+- Gemfile.lock

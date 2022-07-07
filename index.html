@@ -5,7 +5,7 @@ layout: page
 <div class="ray-grid">
     {% for post in site.posts %}
     <div class="ray-grid__cell">
-        <a href="{{ post.url }}" class="ray-card ray-card--link" style="margin-bottom: 1em;">
+        <a href="{{ post.url | relative_url }}" class="ray-card ray-card--link" style="margin-bottom: 1em;">
             <!-- <div class="ray-card__image ray-image ray-image--16by9">
                 <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }}" />
             </div> -->

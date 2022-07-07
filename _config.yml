@@ -29,4 +29,3 @@ plugins:
 exclude:
 - Gemfile
 - Gemfile.lock
-baseurl: jekyll-website-demo

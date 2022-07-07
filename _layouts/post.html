@@ -4,12 +4,19 @@ layout: layout
 
 <div class="ray-page-container">
 
-    <ul class="ray-breadcrumbs">
-        <li class="ray-breadcrumb">
-            <a href="{{ '/' | relative_url }}">Home</a>
-        </li>
-        <li class="ray-breadcrumb">{{ page.title }}</li>
-    </ul>
+    <div class="ray-grid">
+        <div class="ray-grid__cell--span-6">
+            <ul class="ray-breadcrumbs">
+                <li class="ray-breadcrumb">
+                    <a href="{{ '/' | relative_url }}">Home</a>
+                </li>
+                <li class="ray-breadcrumb">{{ page.title }}</li>
+            </ul>
+        </div>
+        <div class="ray-grid__cell--span-6" style="text-align: right;">
+            <date>{{ page.date | date_to_long_string }}</date>
+        </div>
+    </div>
 
     <h1 class="ray-text--display-1">{{ page.title }}</h1>
 
